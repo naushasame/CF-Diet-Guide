@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Frequent Questions and Answers</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="appContent">
+  <ul>
+    <li *ngFor="let q of faqs; let i=index" text-wrap (click)="toggleQuestion(i)" [ngClass]="{active: isQuestionShown(i)}">
+     <button ion-button full outline class="mainpoint">{{q.question}}</button>
+          <ion-item *ngIf="isQuestionShown(i)" class="answer">{{q.answer}}</ion-item>
+    </li>
+  </ul>
+</ion-content>

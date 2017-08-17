@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Vitamin History</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="appContent">
+    <section >
+    <span class="profileHead">
+        <p>swipe left for actions</p>
+    </span>
+    <span class="VitaminProfile">
+        <ion-list>
+             <ion-item color="secondary" text-wrap>
+                <ion-label>Date/Time</ion-label>
+                <ion-label>Vitamin</ion-label>
+                <ion-label>Dose</ion-label>
+                <ion-label>MealTime</ion-label>
+            </ion-item>
+        <ion-item-sliding *ngFor="let record of Vitamins; let i = index" class="gray">
+            <ion-item text-wrap class="detailedItems">
+                <ion-label>{{record.vitDate}}</ion-label>
+                <ion-label>{{record.vitName}}</ion-label>
+                <ion-label class="longText">{{record.vitDose}}&nbsp;{{record.vitDoseUnit}}</ion-label>
+                <ion-label>{{record.vitMealTime}}</ion-label>
+            </ion-item>
+            <ion-item-options>
+                <button ion-button outline (click)="delete(i)" >
+                    <ion-icon name="trash" color="danger" outline></ion-icon>
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+    </span> 
+     </section>
+</ion-content>
+<ion-footer class="floating">
+    <button ion-button round (click)="goToAdd()" class="AddButton">+</button>
+  </ion-footer>

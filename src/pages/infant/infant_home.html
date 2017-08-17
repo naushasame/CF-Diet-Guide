@@ -1,0 +1,209 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Baby CF Patients</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content  class="appContent">
+    <ul class="questions">
+        <li text-wrap (click)="toggleQuestion(0)" [ngClass]="{active: isQuestionShown(0)}">
+            <button ion-button text-wrap class="questionButton"  round outline color="primary">Breast Milk</button>
+            <span *ngIf="isQuestionShown(0)" class="answer">
+               <ul class="details">
+                   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Breast milk is the best milk for babies without medical problems and for
+most babies with cystic fibrosis</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">It contains everything needed for growth
+and development during the first six months of life</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">The nutrients it contains
+are easily digested and absorbed</span>
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">It contains antibodies which
+offer some protection against certain infections, such as coughs and colds,
+ear infections and tummy upsets</span>
+
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Some babies who have cystic fibrosis have extra energy needs and may
+have difficulty gaining weight</span>
+        
+            <span class="subpoint"><img src="assets/img/subpoint.png">If this is the case, frequent
+feeds are to to be given, then it may be necessary to give supplementary
+feeds of infant formula or nutrient-dense infant feeds</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Your dietitian will advise you on the best choice of feeds, if you need to
+supplement your baby’s breast feeds</span>
+            
+        </li>
+       </ul>
+    </span>
+    </li>
+  <li text-wrap (click)="toggleQuestion(1)" [ngClass]="{active: isQuestionShown(1)}">
+            <button ion-button text-wrap class="questionButton"  round outline color="primary">Formula Milk</button>
+            <span *ngIf="isQuestionShown(1)" class="answer">
+               <ul class="details">
+                   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">If you are unable to breast-feed your baby, a large number of infant formula milks available to buy that are designed for
+use between 0–12 months old</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">They are all suitable for babies with cystic
+fibrosis and most babies will gain weight satisfactorily on these</span>
+           
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Nutrient-dense infant formula milks</span>
+
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Contains extra energy
+and other nutrients such as protein, vitamins and minerals to help your
+baby gain weight</span>
+        
+            
+        </li>
+       </ul>
+    </span>
+    </li>
+  <li text-wrap (click)="toggleQuestion(2)" [ngClass]="{active: isQuestionShown(2)}">
+            <button ion-button text-wrap class="questionButton"  round outline color="primary">Special Milk</button>
+            <span *ngIf="isQuestionShown(2)" class="answer">
+               <ul class="details">
+                   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Occasionally, your dietitian or doctor may recommend that your baby
+has a special milk which contains fats, proteins and sugars in a more
+easily digestible form</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">This is because some babies with cystic fibrosis
+have problems digesting standard infant milk or breast milk</span>
+<span class="subpoint"><img src="assets/img/subpoint.png">This is most
+commonly seen in babies who have needed surgery on their bowel</span>
+<span class="subpoint"><img src="assets/img/subpoint.png">Special milks will only be used if your baby has had difficulty tolerating
+their usual feed</span>
+           
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">How much milk should babies take?</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">There are no set rules on this</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">If your baby is only taking small
+quantities of milk or does not wake for feeds during the day, please discuss
+this with your dietitian</span>
+
+        </li>
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">When can cows’ milk be given as a drink?</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">Pasteurised cows’ milk should not be given as a drink before one year of
+age as it is low in iron</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">From six months, follow-on milk can be given. This contains
+more iron and other nutrients, but still has the same number of calories as
+normal baby milk</span>
+
+        </li>
+       </ul>
+    </span>
+    </li>
+  <li text-wrap (click)="toggleQuestion(3)" [ngClass]="{active: isQuestionShown(3)}">
+            <button ion-button text-wrap class="questionButton"  round outline color="primary">Pancreatic enzymes</button>
+            <span *ngIf="isQuestionShown(3)" class="answer">
+               <ul class="details">
+                   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Pancreatic enzymes are natural chemicals that help the body to break
+down and digest protein, fat, and carbohydrates in food</span>
+           
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Pancreatic insufficiency or pancreatic failure is seen in around 90% of people with cystic fibrosis</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">Most babies with cystic fibrosis will need pancreatic enzyme supplements
+to replace those not produced by the pancreas</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">The most commonly-used pancreatic enzyme supplement for children
+in the UK is Creon</span>
+<span class="subpoint"><img src="assets/img/subpoint.png">The dose of pancreatic enzyme supplements will be prescribed at the
+hospital clinic</span>
+<span class="subpoint"><img src="assets/img/subpoint.png">They should be
+given from a spoon at the beginning of the feed</span>
+<span class="subpoint"><img src="assets/img/subpoint.png">Using fruit puree holds
+the granules into a gel and makes them easier for your baby to swallow</span>
+        </li>
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Do not place the dry granules into your baby’s mouth as
+it may cause your baby to choke</span>
+		
+        </li>
+       </ul>
+    </span>
+    </li>
+  <li text-wrap (click)="toggleQuestion(4)" [ngClass]="{active: isQuestionShown(4)}">
+            <button ion-button text-wrap class="questionButton"  round outline color="primary">Weaning</button>
+            <span *ngIf="isQuestionShown(4)" class="answer">
+               <ul class="details">
+                   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">When to start weaning?</span>
+           
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Weaning is the process of gradually adding solids into a baby’s diet</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">No need to start your baby on solid food before six months of age</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">The earliest time to introduce solids is 17 weeks of age</span></li>
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Signs your baby is ready for their first food:</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">They can stay in a sitting position and hold their head steady</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">They can co-ordinate their eyes, hands and mouth so that they can
+look at the food, pick it up and put it in their mouth, all by themselves</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">They can swallow food</span>
+		
+		
+        </li>
+		
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Some signs that can be mistaken:</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">Chewing fists</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">Waking in the night when they have previously slept through</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">Wanting extra milk feeds</span>
+        </li>
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Getting started</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">Always stay with your baby when they are eating in case they start to
+choke
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Let your baby enjoy touching and holding the food
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Allow your baby to feed themselves, using their fingers, as soon as they
+show an interest
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Don’t force your baby – wait until the next time if they are not interested
+this time
+</span><span class="subpoint"><img src="assets/img/subpoint.png">If you are using a spoon, wait for your baby to open their mouth before
+you offer the food. Your baby may like to hold a spoon too
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Start by offering just a few pieces or teaspoons of food, once a day
+Cool hot food and test it before giving it to your baby</span>
+        </li>
+		
+		
+       </ul>
+    </span>
+    </li>
+  	<li text-wrap (click)="toggleQuestion(5)" [ngClass]="{active: isQuestionShown(5)}">
+				<button ion-button text-wrap class="questionButton"  round outline color="primary">Questions</button>
+				<span *ngIf="isQuestionShown(5)" class="answer">
+				   <ul class="details">
+					   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">What about drinks other than milk?
+	</span>
+	<span class="subpoint"><img src="assets/img/subpoint.png">Until 17 weeks of age, milk is the only drink that most babies need
+	</span><span class="subpoint"><img src="assets/img/subpoint.png">From about six months, if weight gain is adequate, water, well-diluted
+	fruit juice or baby juice may replace a breast or infant feed at a mealtime
+	</span><span class="subpoint"><img src="assets/img/subpoint.png">It is important to maintain a daily milk intake of 500–600ml (one pint)
+	in babies over six months</span>
+	</li><li><span class="mainpoint"><img src="assets/img/mainitemlist.png">What about vitamin supplements?
+	</span>
+	<span class="subpoint"><img src="assets/img/subpoint.png">In cystic fibrosis, there is usually some loss of vitamins A, D and E in the
+	stools
+	</span><span class="subpoint"><img src="assets/img/subpoint.png">Vitamins A and D are usually given together in a liquid medicine which
+	contains other vitamins such as B and C group (e.g. Abidec – Parke-Davis
+	Medical, Dalivit – Eastern Pharmaceuticals)
+	</span><span class="subpoint"><img src="assets/img/subpoint.png">Vitamin E is given as a separate liquid preparation
+	</span><span class="subpoint"><img src="assets/img/subpoint.png">Vitamin K may also be needed</span>
+	</li><li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Is additional salt needed for babies?</span>
+	<span class="subpoint"><img src="assets/img/subpoint.png">Breast or baby milks are very low in salt and occasionally this may cause
+	problems for babies with cystic fibrosis
+	</span><span class="subpoint"><img src="assets/img/subpoint.png">Some doctors give babies extra
+	salt in the form of a salt solution
+	</span><span class="subpoint"><img src="assets/img/subpoint.png">Please do not add extra salt to expressed breast milk or
+	bottle milk without advice from your doctor
+	</span><span class="subpoint"><img src="assets/img/subpoint.png">Adding too much salt to a baby’s feed can cause
+	vomiting and kidney problems</span>
+	</li>
+
+			
+			
+		   </ul>
+		</span>
+    </li>
+  <li text-wrap (click)="toggleQuestion(6)" [ngClass]="{active: isQuestionShown(6)}">
+     <button ion-button text-wrap class="questionButton"  round outline color="primary" >LEARN MORE</button>
+          <span *ngIf="isQuestionShown(6)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">To learn more visit the <a href="http://cysticfibrosis.org.uk">CF Trust UK</a> website
+</span>
+                         </li>
+               </ul>   
+          </span>
+    </li>
+    </ul>
+</ion-content>

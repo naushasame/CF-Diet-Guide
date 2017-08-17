@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pregnant CF Patients</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="appContent">
+
+  <ul class="questions">
+    <li text-wrap (click)="toggleQuestion(0)" [ngClass]="{active: isQuestionShown(0)}">
+      <button ion-button text-wrap class="questionButton" round outline color="primary">Main Issues</button>
+      <span *ngIf="isQuestionShown(0)" class="answer">
+				   <ul class="details">
+					   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Weight
+</span><span class="subpoint"><img src="assets/img/subpoint.png">In all women, with or without CF, prepregnancy
+weight, rate of weight gain, and total weight gain during
+pregnancy are crucial measures to follow for both the
+woman’s postpartum health and for her baby
+</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Many children with cystic fibrosis need a diet higher in calories and protein
+than children without cystic fibrosis
+</span><span class="subpoint"><img src="assets/img/subpoint.png">They do not produce sufficient pancreatic enzymes to digest their food
+</span><span class="subpoint"><img src="assets/img/subpoint.png">There will be some loss of energy and protein in the stools
+</span><span class="subpoint"><img src="assets/img/subpoint.png">A higher calorie diet is needed to compensate for this
+
+</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Diabetes
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Pregnant CF women tend to have
+early development of diabetes and poor weight gain,
+thereby requiring greater intake of calories and protein
+when compared with the non-CF pregnant women</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Nutrition Support</span><span class="subpoint"><img src="assets/img/subpoint.png">Pregnancy places an additional nutrition burden
+on women who have CF. Besides maintaining optimal
+energy and nutrient intake to meet the demands of
+CF, women also must meet the increased requirements
+imposed by pregnancy.</span></li>
+
+
+
+  </ul>
+  </span>
+  </li>
+<li text-wrap (click)="toggleQuestion(8)" [ngClass]="{active: isQuestionShown(8)}">
+    <button ion-button text-wrap class="questionButton" round outline color="primary">Advice on Pregnancy</button>
+    <span *ngIf="isQuestionShown(8)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Pragnancy for CF patients needs cases by case discussion
+with your doctors and nutritionist</span>
+<span class="subpoint"><img src="assets/img/subpoint.png">You may use <a href="https://www.cysticfibrosis.org.uk/~/media/documents/life-with-cf/information-and-support/starting-a-family-pack-2016.ashx?la=en">THIS</a> guide from CF Trust for advice on starting a family</span>
+  </li>
+  </ul>
+  </span>
+  </li>
+ <li text-wrap (click)="toggleQuestion(7)" [ngClass]="{active: isQuestionShown(7)}">
+    <button ion-button text-wrap class="questionButton" round outline color="primary">LEARN MORE</button>
+    <span *ngIf="isQuestionShown(7)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">To learn more visit the <a href="http://cysticfibrosis.org.uk">CF Trust UK</a> website
+</span>
+  </li>
+  </ul>
+  </span>
+  </li>
+  </ul>
+</ion-content>

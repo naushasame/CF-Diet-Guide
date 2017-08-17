@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Diet Guide for Cystic Fibrosis Patients</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="appContentHome">
+    <section >
+    <span class="homeIconList">
+    <img src="assets/img/homeAdult.png"  class="homeIcon" (click)="goToAdultHome()"/>
+    <img src="assets/img/homeKids.png"  class="homeIcon centerIcon" (click)="goToKidstHome()"/>
+    <img src="assets/img/homePreg.png"  class="homeIcon" (click)="goToPregHome()"/>
+    <img src="assets/img/homeCenter.png"  class="homeCenterIcon" (click)="goToMonitoringtHome()"/>
+      <img src="assets/img/homeInfant.png"  class="homeIcon" (click)="goToInfantHome()"/>
+    <img src="assets/img/homeTips.png"  class="homeIcon" (click)="goToTipsHome()"/>
+    <img src="assets/img/homeFAQ.png"  class="homeIcon" (click)="goToFaqHome()"/>
+    </span>
+  <span class="unameArea">
+    <button ion-button outline full>Welcome {{username}}</button>
+  </span>
+     </section>
+</ion-content>
+   

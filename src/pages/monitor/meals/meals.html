@@ -1,0 +1,32 @@
+ <ion-card class="appContent">
+      <ion-card-header>
+        <h2>Add Meal</h2>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          
+			  <ion-label floating>Meal Date:</ion-label>
+			  <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="mealDate" name="mealDate" class="mealItemBox"></ion-datetime>
+            </ion-item>
+        <ion-item>
+			  <ion-label floating>Meal Type:</ion-label>
+			  <ion-select [(ngModel)]="mealType" class="mealPopBox">
+                <ion-option value="Break Fast">Break Fast</ion-option>
+                <ion-option value="Lunch">Lunch</ion-option>
+                <ion-option value="Snack">Snack</ion-option>
+                <ion-option value="Dinner">Dinner</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+			  <ion-label floating>Items Consumed:</ion-label>
+			  <ion-textarea type="text" [(ngModel)]="mealDetails"></ion-textarea>
+        </ion-item>
+        <ion-item>
+              <ion-label>{{addResult}}</ion-label>
+        </ion-item>
+    <ion-row>
+      <ion-col><button ion-button  (click)="savemealProfile()" class="buttons">Add Meal Record</button></ion-col>
+      <ion-col><button ion-button  (click)="dismiss()" class="buttons">Cancel</button></ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>

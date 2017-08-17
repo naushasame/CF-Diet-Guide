@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>BMI History</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="appContent">
+    <section >
+    <span class="profileHead">
+        <p>swipe left for actions</p>
+    </span>
+    <span class="BMIProfile">
+        <ion-list>
+             <ion-item text-wrap color="secondary">
+                <ion-label>DATE</ion-label>
+                <ion-label>BMI</ion-label>
+                <ion-label>Height and Weight</ion-label>
+            </ion-item>
+        <ion-item-sliding *ngFor="let bmi of bmirecords; let i = index" class="gray">
+                
+            <ion-item text-wrap class="detailedItems">
+                <ion-label>{{bmi.dateval}}</ion-label>
+                <ion-label>{{bmi.bmival|number:'1.2-2'}}</ion-label>
+                 <ion-label>Height:{{bmi.heightval}}, Weight:{{bmi.weightval}}</ion-label>
+            </ion-item>
+            <ion-item-options>
+                <button  ion-button ion-button outline (click)="delete(i)">
+                    <ion-icon name="trash" color="danger" outline></ion-icon>
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+    </span>
+       
+     </section>
+</ion-content>
+ <ion-footer class="floating">
+    <button ion-button round (click)="goToAdd()" class="AddButton">+</button>
+  </ion-footer>

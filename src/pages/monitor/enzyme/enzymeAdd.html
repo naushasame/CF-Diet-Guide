@@ -1,0 +1,33 @@
+ <ion-card class="appContent">
+      <ion-card-header>
+        <h2>Add Ezyme</h2>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+			  <ion-label>Enzyme Name:</ion-label>
+			  <ion-input [(ngModel)]="newEnzyme" (click)="clearResult()"></ion-input>
+        </ion-item>
+     <ion-row>
+      <ion-col><button ion-button (click)="saveEnzyme()" class="buttons">Add</button></ion-col>
+      <ion-col><button ion-button  (click)="dismiss()" class="buttons">Cancel</button></ion-col>
+    </ion-row>        
+        <ion-item>
+              <ion-label>{{addResult}}</ion-label>
+        </ion-item>
+        <ion-list>
+             <ion-item color="secondary" text-wrap>
+                <ion-label>Enzymes</ion-label>
+            </ion-item>
+        <ion-item-sliding *ngFor="let record of newEnzymes; let i = index">
+            <ion-item text-wrap>
+                <ion-label>{{record.enzymeNameVal}}</ion-label>
+            </ion-item>
+            <ion-item-options>
+                <button ion-button round color="danger" (click)="deleteEnzyme(i)">
+                    <ion-icon name="trash"></ion-icon>
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Your Statistics</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content  class="appContent">
+    <ion-card>
+      <ion-card-header>
+        BMI Chart
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #bmiCanvas ></canvas>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Blood Glucose Chart
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #glucoseCanvas></canvas>
+      </ion-card-content>
+    </ion-card>
+     <ion-card>
+      <ion-card-header>
+        Weight
+      </ion-card-header>
+      <ion-card-content>
+        <h2>Maximum: {{maxRecWeight}}KG, on {{maxRecWeightDate}}</h2>
+        <h2>Minimum: {{minRecWeight}}KG, on {{minRecWeightDate}}</h2>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        Meal Pattern
+      </ion-card-header>
+      <ion-card-content>
+        <canvas #mealCanvas></canvas>
+        <h2>Breakfasts: {{numberOfBreakfast}}, Lunches: {{numberOfLunch}}</h2>
+        <h2>Snacks: {{numberOfSnack}}, Dinners: {{numberOfDinner}}</h2>
+      </ion-card-content>
+    </ion-card>
+ 
+
+</ion-content>

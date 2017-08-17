@@ -1,0 +1,79 @@
+page-monitorhome {
+    .appContent{
+    }
+    ion-grid{
+        width:100%;
+        margin: 0;
+        padding:0;
+    ion-row{
+      
+    }
+    ion-col{
+
+        margin:2%;
+        width:50%;
+        section{
+           margin-top:5%;
+           margin-bottom:10px;
+           height:100%;
+            border-radius:5px;
+            box-shadow: 3px 3px 3px 3px #777;
+        }
+        .icons{
+            img{
+                padding-left: 2%;
+                width:48%;
+                height:48%;
+            }
+
+            }
+        .meals{
+            background-color: lightyellow;
+
+        }
+        .blsugar{
+            background-color: lightyellow;
+
+        }
+        .bmi{
+            background-color: lightyellow;
+
+        }
+        .enzyme{
+            background-color: lightyellow;
+
+        }
+        .vitamins{
+            background-color: lightyellow;
+
+        }
+        .stats{
+            background-color: lightyellow;
+
+
+        }
+        .mealsSurprise{
+             background-color: lightyellow;
+            margin-top:5%;
+           margin-bottom:10px;
+           height:auto;
+            border-radius:5px;
+            box-shadow: 3px 3px 3px 3px #777;
+        .icons{
+            img{
+                padding-left: 2%;
+                width:25%;
+                height:25%;
+                margin-right: 5%;
+                margin-left: 2%;
+            }
+
+            }
+        }
+        
+          
+        
+    
+    }
+}
+}

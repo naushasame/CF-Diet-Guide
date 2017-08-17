@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar>
+		<ion-title><ion-icon name="person"></ion-icon>&nbsp;&nbsp;&nbsp;Your Profile
+			<h2>User:&nbsp;&nbsp;{{username}}</h2>
+		</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="appContent">
+		<section>
+			<ion-item class="gray">
+			  <ion-label class="aLabel">Full Name</ion-label>
+			  <ion-input  class="ionInput"  [(ngModel)]="fullname"></ion-input>
+			</ion-item>
+			<ion-item class="gray">
+			  <ion-label class="aLabel">D.O.B</ion-label>
+              <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="dob" class="ionInput"></ion-datetime>
+            </ion-item>
+            <ion-item class="gray">
+			  <ion-label class="aLabel">Diagnosed date</ion-label>
+              <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="diagnosedDate" class="ionInput"></ion-datetime>
+            </ion-item>
+			<ion-item class="gray">
+			  <ion-label class="aLabel">Contact No.</ion-label>
+			  <ion-input  class="ionInput"  [(ngModel)]="contactNo"></ion-input>
+			</ion-item>
+			<ion-item class="gray">
+			  <ion-label class="aLabel">Emergency contact No.</ion-label>
+			  <ion-input  class="ionInput"  [(ngModel)]="emergencyContactNo"></ion-input>
+			</ion-item>
+			<ion-item class="gray">
+			  <ion-label class="aLabel">Emergency contact name</ion-label>
+              <ion-input  class="ionInput"  [(ngModel)]="emergencyContactName"></ion-input>
+              </ion-item>
+            <ion-item class="gray">
+			  <ion-label class="aLabel">Relation to Patient</ion-label>
+			  <ion-input  class="ionInput"  [(ngModel)]="emergencyContactRelavance"></ion-input>
+			</ion-item>
+			<ion-item class="gray">
+			  <ion-label class="aLabel">Hospital Contact.</ion-label>
+			  <ion-input  class="ionInput"  [(ngModel)]="HospitalEmergencyContactNo"></ion-input>
+			</ion-item>
+		 </section>
+		 
+</ion-content>
+		<ion-footer>
+		<ion-row>
+			<ion-col col-6><button ion-button  full (click)="saveProfile()">Save Profile</button></ion-col>
+			<ion-col col-6><button ion-button full (click)="presentConfirm()">Log Out</button></ion-col>
+		</ion-row>
+  </ion-footer>

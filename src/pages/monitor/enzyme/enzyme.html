@@ -1,0 +1,51 @@
+ <ion-card class="appContent">
+      <ion-card-header>
+        <h2>Add Enzyme Record</h2>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+			  <ion-label>Intake Date:</ion-label>
+			  <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="dateTime" name="dateTime" class="enzymeItemBox"></ion-datetime>
+        </ion-item>
+            <ion-item>
+			  <ion-label>Enzyme Supplement:</ion-label>
+			<ion-select [(ngModel)]="enzymeName" >
+                <ion-option ([ngModel])="record.enzymeNameVal"  *ngFor="let record of newEnzymes; let i = index">{{record.enzymeNameVal}}</ion-option>
+            </ion-select>
+            </ion-item>
+        <ion-row><ion-col><button ion-button (click)="goToAddAnEnzyme()" class="buttons">Manage Enzymes</button>
+        </ion-col></ion-row>
+        <ion-item>
+			  <ion-label>Dose:</ion-label>
+			  <ion-select [(ngModel)]="doses">
+                <ion-option value="1/2 Capsule">1/2 Capsule</ion-option>
+                <ion-option value="1 Capsule">1 Capsule</ion-option>
+                <ion-option value="2 Capsules">2 Capsules</ion-option>
+                <ion-option value="3 Capsules">3 Capsules</ion-option>
+        </ion-select>
+        </ion-item>
+        <ion-item>
+			  <ion-label>Meal Time:</ion-label>
+			  <ion-select [(ngModel)]="mealTime">
+                <ion-option value="Before Break Fast">Before Break Fast</ion-option>
+                <ion-option value="After Break Fast">After Break Fast</ion-option>
+                <ion-option value="Before Lunch">Before Lunch</ion-option>
+                <ion-option value="After Lunch">After Lunch</ion-option>
+                <ion-option value="Before Snack">Before Snack</ion-option>
+                <ion-option value="After Snack">After Snack</ion-option>
+                <ion-option value="Before Dinner">Before Dinner</ion-option>
+                <ion-option value="After Dinner">After Dinner</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+              <ion-label>{{addResult}}</ion-label>
+        </ion-item>
+		
+        <ion-row>
+      <ion-col> <button ion-button  (click)="saveEnzymeProfile()" class="buttons">Add Record</button>
+             </ion-col>
+      <ion-col><button  ion-button  (click)="dismiss()" class="buttons">Cancel</button></ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
+

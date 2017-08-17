@@ -1,0 +1,32 @@
+page-initial{
+    .loading{
+        background-color: lightgray;
+    }
+    #top{
+        margin-top:12%;
+        width:100%;
+    }
+    .intialHeading{
+        padding:2%;
+        color:brown;
+        font-weight: bold;
+        text-align: center;
+        font-size: 35px;
+    }
+    .favIcon{
+        margin-top:10%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: left;
+        justify-content: center;
+    }
+    .foot{
+        padding:0;
+        margin:0;
+        background-color:lightgray;
+    }
+    ion-item::after{
+        border-radius: 5px;
+        border-bottom:none;
+    } 
+}

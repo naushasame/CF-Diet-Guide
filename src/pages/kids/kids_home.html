@@ -1,0 +1,346 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Kid CF Patients</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content  class="appContent">
+	<ul class="questions">
+		<li text-wrap (click)="toggleQuestion(0)" [ngClass]="{active: isQuestionShown(0)}">
+			<button ion-button text-wrap class="questionButton" round outline color="primary">Main Issues</button>
+			<span *ngIf="isQuestionShown(0)" class="answer">
+				   <ul class="details">
+					   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Good nutrition is vital for children with cystic fibrosis 
+</span><span class="subpoint"><img src="assets/img/subpoint.png">To reduce the risk of
+developing a chest infection 
+</span><span class="subpoint"><img src="assets/img/subpoint.png">To enable them to grow and gain weight normally
+</span></li>
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Many children with cystic fibrosis need a diet higher in calories and protein
+than children without cystic fibrosis
+</span><span class="subpoint"><img src="assets/img/subpoint.png">They do not produce sufficient pancreatic enzymes to digest their food
+</span><span class="subpoint"><img src="assets/img/subpoint.png">There will be some loss of energy and protein in the stools
+</span><span class="subpoint"><img src="assets/img/subpoint.png">A higher calorie diet is needed to compensate for this
+
+</span></li>
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">The diet
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Encourage them to eat a variety of foods including eggs,meat, fish, pulses, cereals, vegetables, </span></li>
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Three meals a day plus small mid</span><span class="subpoint"><img src="assets/img/subpoint.png">meal snacks are recommended to achieve the best intake</span></li>
+
+
+
+	</ul>
+	</span>
+	</li>
+	<li text-wrap (click)="toggleQuestion(1)" [ngClass]="{active: isQuestionShown(1)}">
+		<button ion-button text-wrap class="questionButton" round outline color="primary">High calorie foods</button>
+		<span *ngIf="isQuestionShown(1)" class="answer">
+				   <ul class="details">
+				   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fatty foods
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Use ordinary margarine or butter rather than low fat spread 
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Choose spreads high in polyunsaturates or monosaturates e.g. sunflower or olive
+oil spreads 
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Spread generously on bread and toast
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Add to potatoes and vegetables
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Choose polyunsaturated oils or nut oils in preference to lard or butter
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Alternatively foods can be drizzled with oil before grilling
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Chocolate, crisps, cream cakes, éclairs, doughnuts, cream buns are popular snack foods, but should not replace meals
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Cream, single, double or whipped can be added to puddings, drinks,cereals, sauces and soups
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Ice cream, sweet pastry dishes, trifle, crumbles and mousses are high calorie puddings
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Add generous quantities of salad dressings, salad cream, mayonnaise and dips to salads and vegetables
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Starchy foods
+</span><span class="subpoint"><img src="assets/img/subpoint.png">At least one portion of starchy food should be offered with every meal
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Potatoes, bread, cereals, rice and pasta
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Breakfast cereal, toast, biscuits and sandwiches are useful bedtime snacks
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Encourage plenty of pasta dishes using meat and cheese sauces 
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Try adding pasta, potato, rice or noodles to soups and casseroles
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Offer jacket potatoes with a variety of fillings or just add butter or margarine or mayonnaise as a snack meal
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Always offer bread or potatoes with salad dishes
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Potatoes, pasta or rice added to salads will provide extra calories
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Fried rice, potatoes such as chips and roast are good sources of fat and calories
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Fry in polyunsaturated or monounsaturated oil rather than lard
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Potato shapes e.g. ‘Alphabites’, ‘Hungry Joe’s’, potato fritters, and mini
+potato waffles are helpful when feeding toddlers
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Savoury biscuits and bread e.g. herb or garlic bread, cheese sandwich,
+biscuits, cheese bites or fingers, cheddar cheese, bread sticks served
+with dips are popular
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Toasted buttered crumpets, fruited teacakes or filled pitta bread are
+useful snacks
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Extra calories
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Sweets may be given, but remember they should not replace meals
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Sugar can be used liberally in drinks, cereals and puddings.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Spread jam, honey, marmalade or chocolate spread thickly on bread or
+toast.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Avoid low sugar or low calorie squashes and fizzy drinks
+Snacks
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Children often have small appetites
+</span><span class="subpoint"><img src="assets/img/subpoint.png">It is often better to offer small frequent meals with two</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">three snacks
+			</span><span class="subpoint"><img src="assets/img/subpoint.png">However, do not give a snack less than one hour before a meal, as the
+meal may not be eaten</span></li>
+
+
+
+	</ul>
+	</span>
+	</li>
+	<li text-wrap (click)="toggleQuestion(2)" [ngClass]="{active: isQuestionShown(2)}">
+		<button ion-button text-wrap class="questionButton" round outline color="primary">Protein, Calcium and Fiber</button>
+		<span *ngIf="isQuestionShown(2)" class="answer">
+				   <ul class="details">
+				   
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png"> Protein</span><span class="subpoint"><img src="assets/img/subpoint.png">rich foods:
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Meat
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Fish
+</span><span class="subpoint"><img src="assets/img/subpoint.png">All types of meat are suitable and can be cooked in any way. Try to cook
+with added fat, for example by frying or roasting to boost calories
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Shaped meat in breadcrumbs such as ‘Dinosaurs’ and chicken nuggets
+are popular with young children
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Do not remove the fat from the meat
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Oily fish e.g. sardines, pilchards, herring, tuna, mackerel and salmon are a good source of essential fatty acids
+</span><span class="subpoint"><img src="assets/img/subpoint.png">All types of fish are suitable, including fresh or tinned and frying fish
+rather than poaching or grilling increases the calories
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Choose tinned fish in oil rather than brine
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Beans and lentils
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Add lentils or red kidney beans to soups and casseroles.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Baked beans on toast, or baked beans served with jacket potatoes or
+chips, are useful snack meals
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Nuts and peanuts are high in calories, protein and essential fatty acids
+</span><span class="subpoint"><img src="assets/img/subpoint.png">young children under thre years of age, with asthma, eczema or hay fever are recommended to
+avoid nuts and nut products like peanut butter
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Quorn or tofu
+</span><span class="subpoint"><img src="assets/img/subpoint.png">These are useful sources of vegetarian protein and can be used to
+replace meat
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">All milk and milk products
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Eggs
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Use extra eggs in recipes for cakes and biscuits
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Chop up hard</span><span class="subpoint"><img src="assets/img/subpoint.png">boiled eggs and add to salads
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Eggs should be boiled until the yolk is hard
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">High calcium foods
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Drink plenty of milk – up to one pint of milk daily. Try to use full cream
+milk for extra calories
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Do not use low fat milk. It is low in calories
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Encourage milky drinks e.g. drinking chocolate, home</span>
+		<span class="subpoint"><img src="assets/img/subpoint.png">made milk shakes, Horlicks or Ovaltine
+			</span><span class="subpoint"><img src="assets/img/subpoint.png">Give plenty of milky pudding e.g. instant desserts, custard, rice
+puddings, mousses, yogurt and fromage frais desserts
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Yogurts/Fromage Frais
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Full cream yogurts are high in energy e.g. thick and creamy or custardstyle.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Avoid low fat/diet yogurts or fromage frais
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Yogurt can be used as a between</span><span class="subpoint"><img src="assets/img/subpoint.png">meal snack 
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Fruit, crunch or crumble corner yogurts are particularly popular
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Fruit yogurt and fromage frais can be used to put on the top of fruit or
+added to instant desserts
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Cheese
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Always choose full fat cheese e.g. Cheddar, Cheshire, Philadelphia
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Give cheese sandwiches, cheese on toast or cheese and biscuits as
+snacks
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Cheese triangles, cheese slices and spreads are often popular with
+young children
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Add grated cheese to sauces, soups, omelettes, scrambled eggs and
+mashed potato or extra cheese on pizzas
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Sprinkle grated cheese over vegetables, potatoes, beef burgers, baked
+beans or spaghetti
+</span><span class="subpoint"><img src="assets/img/subpoint.png">‘Cheese Dippers’ are a popular lunch box treat
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fibre</span><span class="subpoint"><img src="assets/img/subpoint.png">rich foods
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Children with cystic fibrosis should be encouraged to eat some foods
+which are rich in fibre to help maintain normal bowel function and prevent
+constipation 
+</span><span class="subpoint"><img src="assets/img/subpoint.png">These foods also contain ‘phytochemicals’ which may help
+the body fight infection
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Too much fibre is very filling however and may
+reduce your child’s intake of high energy foods
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Wholemeal bread or white bread with added fibre
+</span><span class="subpoint"><img src="assets/img/subpoint.png">High fibre cereals e.g. Weetabix, Fruit & Fibre or Shredded Wheat
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Oat, flapjacks, digestive biscuits or cereal bars
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Dried fruit eg raisins and sultanas</span></li>
+
+
+	</ul>
+	</span>
+	</li>
+	<li text-wrap (click)="toggleQuestion(3)" [ngClass]="{active: isQuestionShown(3)}">
+		<button ion-button text-wrap class="questionButton" round outline color="primary">Supplements</button>
+		<span *ngIf="isQuestionShown(3)" class="answer">
+				   <ul class="details">
+				   
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Vitamin supplements
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Loss of vitamins in stools, particularly the fat soluble vitamins A, D and E
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Without them the blood level will be low and occasionally deficiency
+symptoms occur
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">The daily supplement should include:
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Vitamin A 4000 = 8000 iu
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Vitamins D 400 = 800 iu
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Vitamin E 50 = 200 mg
+
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Salt supplementation
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Salt loss in sweat is generally only a problem in very hot weather or when
+exercising strenuously for extended times, your doctor may recommend
+
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fluids
+</span><span class="subpoint"><img src="assets/img/subpoint.png">It is important that your child drinks enough fluid, especially during the
+summer or if you are on holiday in a hot country</span></li>
+
+
+	</ul>
+	</span>
+	</li>
+	<li text-wrap (click)="toggleQuestion(4)" [ngClass]="{active: isQuestionShown(4)}">
+		<button ion-button text-wrap class="questionButton" round outline color="primary">Enzymes</button>
+		<span *ngIf="isQuestionShown(4)" class="answer">
+				   <ul class="details">
+				   
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Children with cystic fibrosis produce enough pancreatic enzymes to digest their food normally;
+however, the majority do not, and need to take pancreatic enzyme
+replacement
+</span><span class="subpoint"><img src="assets/img/subpoint.png">The lack of digestive enzymes will result in loss of energy
+and protein in the stools
+</span><span class="subpoint"><img src="assets/img/subpoint.png">The most commonly used pancreatic enzymes in the UK are Creon and Pancrease
+</span><span class="subpoint"><img src="assets/img/subpoint.png">These preparations are made up of microspheres or granules that contain
+enzymes
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">How should pancreatic enzymes be taken?
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Spoon mixed with fruit puree, yogurt or a little milk for babies who cannot swallow them whole
+</span><span class="subpoint"><img src="assets/img/subpoint.png">The enzymes should be taken whole, in the capsule as soon as your child is able to swallow tablets. 
+</span><span class="subpoint"><img src="assets/img/subpoint.png">If your child has been prescribed enzyme granules (Creon Micro) they
+should be given on a spoon with a little fruit puree or yogurt.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Do not mix the enzyme with hot food, or with the meal itself as this will
+reduce the effectiveness.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Try to give enzymes at the beginning and part way through a meal.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Do not allow your child to chew the granules.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">If enzymes are forgotten at the start of the meal, it is not too late to
+take them during or even after the meal, providing it is within five to ten
+minutes of the meal finishing.
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">How much enzyme will my child need?
+The dosage of enzyme needed varies from one child to another.
+You will be advised on the amount to give by your dietitian. Do not adjust the dose without discussion with your CF team.
+In general remember:
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Pancreatic enzymes should be taken with all foods containing fat, protein or starch.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Foods containing sugar and little protein or fat, do not need enzymes.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Fatty meals will need more enzymes, than low fat meals.
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Although most snacks will require less enzymes than a meal, some snacks are very fatty and may need as much, or even more, enzymes
+
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Foods which do not need enzymes
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Boiled sweets, jelly or chewy sweets
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Fresh or tinned fruit
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Jelly
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Squash, fizzy drinks or fruit juice
+
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">How will I know if the amount of enzyme is correct?
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">There are several signs which may mean that the dose of enzymes is incorrect:
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Pale, floaty stools which are difficult to flush away
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Increased stool frequency
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Abdominal pain, bloating, flatulence or wind
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Poor weight gain</span></li>
+
+	</ul>
+	</span>
+	</li>
+	<li text-wrap (click)="toggleQuestion(5)" [ngClass]="{active: isQuestionShown(5)}">
+		<button ion-button text-wrap class="questionButton" round outline color="primary">Packed Lunches</button>
+		<span *ngIf="isQuestionShown(5)" class="answer">
+				   <ul class="details">
+				   
+	
+			<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Sandwich fillings
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Cream cheese and pineapple
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Tuna mayonnaise
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Chocolate spread with raisins
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Ham, cheese and pickle
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Chicken tikka
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Chopped chicken with mayonnaise
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Thick peanut butter and jam
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Beef, tomato and onion
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Grated apple, honey and raisins
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Turkey and apple sauce
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Lunch box fillers/ high calorie snacks
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Chocolate raisins
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Danish pastries
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Individual packed carrot cakes, Jaffa Cakes, chocolate mini rolls or cakes
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Individual fruit pies
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Chocolate muffins
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Doughnuts
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Crisps or savoury snacks
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Nutritious additions
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Individual cartons of milk shake
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Yogurts
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Pre</span><span class="subpoint"><img src="assets/img/subpoint.png">packaged cheese sticks
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Cold meat and sausage slices
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Grapes/bananas or other fruit
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Chopped cucumber/tomato/celery
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Pork pie or sausage roll
+</span><span class="subpoint"><img src="assets/img/subpoint.png">Babybel cheese</span></li>
+
+	</ul>
+	</span>
+	</li>
+	<li text-wrap (click)="toggleQuestion(6)" [ngClass]="{active: isQuestionShown(6)}">
+		<button ion-button text-wrap class="questionButton" round outline color="primary">Quick Meals</button>
+		<span *ngIf="isQuestionShown(6)" class="answer">
+				   <ul class="details">
+				   
+	
+			<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Filled jacket potatoes
+</span><span class="subpoint"><img src="assets/img/subpoint.png">savoury mince
+</span><span class="subpoint"><img src="assets/img/subpoint.png">chilli
+</span><span class="subpoint"><img src="assets/img/subpoint.png">creamy bacon and mushroom
+</span><span class="subpoint"><img src="assets/img/subpoint.png">tuna mayonnaise
+</span><span class="subpoint"><img src="assets/img/subpoint.png">vegetable curry
+</span><span class="subpoint"><img src="assets/img/subpoint.png">coleslaw
+</span><span class="subpoint"><img src="assets/img/subpoint.png">creamy cheese sauce
+</span><span class="subpoint"><img src="assets/img/subpoint.png">cheesy herb
+</span><span class="subpoint"><img src="assets/img/subpoint.png">sardine and tomato hash
+</span><span class="subpoint"><img src="assets/img/subpoint.png">ham and cheese
+</span><span class="subpoint"><img src="assets/img/subpoint.png">bangers ‘n’ beans
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Spaghetti bolognaise served with garlic bread and salad
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Chilli con carne made with baked beans and served with fried rice
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Chicken Kiev served with jacket potatoes and vegetables
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Cheese burgers served with beans and chips
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Oven</span><span class="subpoint"><img src="assets/img/subpoint.png">baked chicken in breadcrumbs served with roast potatoes or chips
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Tuna pasta in tomato sauce with bread and salad
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Stir fry pork and vegetable and rice
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Sausage casserole served with sauté potatoes and vegetables.
+</span></li>
+	<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fish in cheese sauce served with potato croquettes and vegetables.</span></li>
+
+	</ul>
+	</span>
+	</li>
+<li text-wrap (click)="toggleQuestion(7)" [ngClass]="{active: isQuestionShown(7)}">
+     <button ion-button text-wrap class="questionButton"  round outline color="primary" >LEARN MORE</button>
+          <span *ngIf="isQuestionShown(7)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">To learn more visit the <a href="http://cysticfibrosis.org.uk">CF Trust UK</a> website
+</span>
+                         </li>
+               </ul>   
+          </span>
+    </li>
+	</ul>
+</ion-content>

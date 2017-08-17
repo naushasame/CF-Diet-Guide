@@ -1,0 +1,423 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Adult CF Patients</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="appContent">
+    <ul class="questions">
+        <li text-wrap (click)="toggleQuestion(0)" [ngClass]="{active: isQuestionShown(0)}">
+            <button ion-button text-wrap class="questionButton"  round outline color="primary">WHY Diet matters</button>
+            <span *ngIf="isQuestionShown(0)" class="answer">
+               <ul class="details">
+                   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Proper diet to get a good weight is essential for:</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Maintaining good lung function</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Withstand infection</span>
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">CF Patients have a higher energy needs than people without CF</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">20 to 50% more calories each day</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Because their body do not absorb food as easily</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Chest infections can increase energy needs</span>
+
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">It is encourage you to have a high calorie diet</span>
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png"> Increase your calorie intake by consuming more</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Fatty foods</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Starchy (carbohydrate) foods</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Sugary foods</span>
+            <span class="subpoint"><img src="assets/img/subpoint.png">Milk and dairy products</span>
+
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">In Addition, Proteins, Fruits and Vegetables and Calcium are to be consumed more</span>
+        </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(1)" [ngClass]="{active: isQuestionShown(1)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Fatty Foods</button>
+        <span *ngIf="isQuestionShown(1)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Olive oil</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Rapeseed oil</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Sunflower, soya, sesame and corn oil</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Soft spreads made from olive oil</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Rapeseed oil etc can be used to replace butter and lard</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Essential omega 3 fats in oily fish</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">How to serve:</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Fry your food in olive oil or rapeseed oil, add olive oil, butter or margarine to vegetables and potatoes and spread butter or margarine generously on bread</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Olive oil can be drizzled on food to increase the flavour and energy content</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Toss pasta in olive oil before serving or drizzle olive oil over pasta dishes</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(2)" [ngClass]="{active: isQuestionShown(2)}">
+        <button ion-button text-wrap class="questionButton"  round outline text-wrap color="primary" class="questionButton">Starchy foods</button>
+        <span *ngIf="isQuestionShown(2)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Breakfast cereals
+</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Pasta
+</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Potatoes
+</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Rice
+</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Bread
+</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Serving:
+</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Make them higher in calories by brushing with olive oil, garnishing with a drizzle of oil, frying them or adding lots of milk, butter, olive oil, mayonnaise etc.
+</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Mash potatoes with butter, olive oil spread or margarine and mix in some cream, crème fraiche or cheese
+</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Toss pasta in olive oil before serving or drizzle olive oil over pasta dishes</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(3)" [ngClass]="{active: isQuestionShown(3)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Sugary foods</button>
+        <span *ngIf="isQuestionShown(3)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Sugary foods such as jam, honey, marmalade, syrup, fizzy drinks, tinned
+fruit in syrup, cakes, biscuits, sweets and chocolates are also energy rich</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Put plenty of sugar into hot drinks, on cereals and in desserts</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Spread jam, honey, marmalade and chocolate spread thickly on bread
+and toast</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Add sugar, honey, jam or syrup to cereal, yoghurt, milk pudding, fruit and
+ice cream</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Beware:
+</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Your teeth are very important to your health. Remember to clean your
+teeth after eating sugary food or taking sweetened drinks and to visit
+your dentist regularly</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Avoid foods which are labelled as being ‘low sugar’ or sweetened with
+artificial sweetener, such as diet yogurts, diet squashes and diet
+fizzy drinks</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(4)" [ngClass]="{active: isQuestionShown(4)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Milk and dairy products</button>
+        <span *ngIf="isQuestionShown(4)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Milk and dairy products are an important source of energy and calcium</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Use full cream or Channel Island milk and try to have between one and
+two pints daily in drinks, desserts such as custard, instant whips or milk
+pudding, savoury sauces such as cheese or parsley sauce
+and on cereals</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Add double cream to ordinary milk when making any milk-based savoury
+and sweet dishes or milky drinks</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Use milk instead of water when making up condensed or packet soup.
+Stir in double cream or olive oil just before serving</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Always add milk and olive oil/butter/margarine to mashed potato</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Cheese is an ideal snack; serve as cheese on toast, cheese and crackers
+etc. In addition cheese can be used to add extra calories to your food,
+for example it can be added to mashed potatoes, baked beans or
+pasta dishes</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Yogurts and ice cream make a quick dessert or snack. Try to choose
+whole milk, thick and creamy, Greek- or custard- style yoghurts and real
+dairy ice creamss</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Beware:
+</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Avoid low fat dairy products such as low fat yoghurts, semi-skimmed
+and skimmed milk and low fat cheeses such as cottage cheese. If these
+are the only types of dairy products you like they are still a good source
+of calcium</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(6)" [ngClass]="{active: isQuestionShown(6)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Protein foods</button>
+        <span *ngIf="isQuestionShown(6)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Animal proteins such as meat, fish, eggs, milk and dairy products</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Vegetable proteins such as beans, peas, lentils and nuts</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Try to keep your protein intake high by having a good helping at each
+meal, including breakfast. It will also help if your snacks include
+some protein</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fatty or oil-rich fish are good source of protein as well as a good source
+of the omega 3 fatty acids. Try eating oil-rich fish such as salmon,
+herring, sardines, mackerel, pilchards, trout, kippers and fresh
+tuna regularly</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">If you are vegetarian make sure you replace meat or fish with a variety
+of protein sources such as soya mince or other meat substitutes, beans,
+seeds, lentils, tofu, nuts, cheese or eggs</span></li>
+
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Beware:
+</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Avoid eating raw eggs and do not add them to high energy drinks. They
+do not add many calories and may be a Salmonella risk</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(7)" [ngClass]="{active: isQuestionShown(7)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Fruit and vegetables</button>
+        <span *ngIf="isQuestionShown(7)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fruit and vegetables are generally low in energy, but do provide vitamins
+and some minerals, so they are an important part of a balanced diet</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Some fruit and vegetables e.g. bananas, beans, pulses and root
+vegetables such as potato, turnip and parsnip are higher in calories</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Try to have a glass of fruit juice or squash with added vitamin C daily</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Use fruit in pies and crumbles or serve with double cream or dairy
+ice cream</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Add double cream, ice cream or custard to fruit</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Add sauces, olive oil or butter to vegetables or fry them</span></li>
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(8)" [ngClass]="{active: isQuestionShown(8)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Calcium</button>
+        <span *ngIf="isQuestionShown(8)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Calcium is essential to the body for maintaining strong and healthy
+bones. Therefore it is important that you have plenty of calcium rich
+foods each day</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">The best sources of calcium are dairy products such as milky drinks,
+cheese, yogurts and dairy ice cream</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">If you don’t like these types of foods, non-dairy calcium sources include
+baked beans, tinned fish with bones (salmon, sardines and pilchards) and
+white bread</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Also look out for foods that may have calcium added to them such as
+soya milk, drinks and cereal bars</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Generally non-dairy foods contain less calcium and therefore you will
+need to eat more of them to ensure an adequate calcium intake. If you
+only like low fat varieties of milk and milk products continue to have
+these as they contain similar amounts of calcium as full cream versions</span></li>
+
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(9)" [ngClass]="{active: isQuestionShown(9)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Breakfast</button>
+        <span *ngIf="isQuestionShown(9)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Cereal with full cream milk and sugar and orange juice</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Toast/crumpets/croissants with butter/margarine and jam/marmalade/
+honey/cheese/peanut butter</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Beans/cheese/scrambled or fried eggs on toast</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fried sausage, bacon and eggs with hash browns or fried bread</span></li>
+
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(10)" [ngClass]="{active: isQuestionShown(10)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Lunch</button>
+        <span *ngIf="isQuestionShown(10)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Ready meal/pizza/sausage roll/fish fingers/pasty and chips</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Baked beans/cheese/scrambled or fried eggs on toast</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Sandwiches with meat/tinned fish/cheese with bag of crisps</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Jacket potato with olive oil/ butter and baked beans/cheese or curry/chilli
+con carne</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Whole milk yogurt/chocolate bar/cake</span></li>
+
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(11)" [ngClass]="{active: isQuestionShown(11)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Evening meal</button>
+        <span *ngIf="isQuestionShown(11)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fried, grilled or roast meat/fish/eggs/chicken</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Or vegetarian meat substitute or lentils with chips/potatoes/rice/pasta</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Fresh/frozen/tinned vegetables with olive oil, butter/margarine or a sauce
+or salad with mayonnaise/olive oil-based dressing</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Sponge pudding with custard or fresh or tinned fruit with double cream
+or ice cream</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Milk pudding with jam or syrup/thick and creamy yogurt/individual trifle
+or dessert/cheesecake/gateaux</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Cheese and biscuits</span></li>
+
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(12)" [ngClass]="{active: isQuestionShown(12)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Snacks</button>
+        <span *ngIf="isQuestionShown(12)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Milkshake/fizzy drink/fruit juice/glass of whole milk/coffee, hot chocolate
+or malted drink made with milk</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Biscuits/cake/crisps/dried fruit and nuts/chocolate bar/cheese and
+crackers/ sandwiches/ individual fruit pies/crisps and dips/peanuts/
+toast/yogurt</span></li>
+
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(13)" [ngClass]="{active: isQuestionShown(13)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Pancreatic Enzymes</button>
+        <span *ngIf="isQuestionShown(13)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Approximately 85% or more of adults with cystic fibrosis are pancreatic
+insufficient</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">To help to compensate for
+the lack of digestive enzymes most people with cystic fibrosis have to take
+replacement pancreatic enzymes to digest their food properly</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">To help to compensate for
+the lack of digestive enzymes most people with cystic fibrosis have to take
+replacement pancreatic enzymes to digest their food properly</span></li>
+
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Take enzymes with every meal, fat-containing snack or milky drink</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Spread your enzymes throughout the meal</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">High fat meals will need more enzymes than low fat meals</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Most snacks will require fewer enzymes than a meal but be cautious
+as some snacks are very fatty and can require as many or even more
+enzymes than a meal</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Be flexible about the dosage and timing of enzymes</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Enzymes do not need to be taken with fruit, jelly, sorbet, boiled, chewy or
+jelly sweets, squash, fizzy drinks or fruit juices</span></li>
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(14)" [ngClass]="{active: isQuestionShown(14)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Vitamin supplements</button>
+        <span *ngIf="isQuestionShown(14)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Malabsorption of the fat-soluble vitamins A, D, E and K is likely in most
+people with cystic fibrosis, especially those who are pancreatic insufficient</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Recommended daily supplements (starting doses):
+Doses from:
+</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Vitamin A – 4000-8000 iu (International Units)</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Vitamin D – 400-800 iu</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Vitamin E – 50-200 iu</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(15)" [ngClass]="{active: isQuestionShown(15)}">
+        <button ion-button text-wrap class="questionButton"  round outline color="primary">Gaining Weight</button>
+        <span *ngIf="isQuestionShown(15)" class="answer">
+               <ul class="details">
+			   <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Eat regularly; an erratic meal pattern could mean that your average
+energy intake is actually quite low, even though you might eat well on
+some days. Organise a meal plan and make sure that you stick to it</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Eat six times a day (three meals and three snacks). Remember that meals
+do not have to be cooked to be high in energy. Snacks can often provide
+the same if not more energy than meals or cooked foods if you choose
+appropriately
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">High energy drinks and supplements can help to increase your intake
+further. Take them last thing at night when they won’t affect your appetite.
+If you take them during the daytime, have them at the end of a meal
+and not in place of food. Remember that over-reliance on these in place
+of food can mean that you tire of the flavours more quickly and have
+nothing to fall back on when your appetite is poor</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Increase the energy content of the food you eat, so that you have more
+energy in the same quantity/portion of food. Easy ways to do this are by
+adding extra olive oil, butter, margarine, cream, mayonnaise, dressings or
+cheese to dishes; frying your food, basting or drizzling food with olive oil</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Try to concentrate on buying high energy foods and avoid low fat, low
+sugar varieties. Check the label on products and be aware of what
+foods contain</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">If you are having difficulty gaining or maintaining your weight, even
+though you are trying to eat as much as you can, discuss this with your
+dietitian/doctor. They may have more ideas or alternatively there may
+be other reasons why you are not gaining weight which can be easily
+corrected</span></li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Appetite:
+</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">It may be a good idea to avoid set mealtimes. However, schedule regular
+eating times for a snack or high energy drink every two hours. This helps
+to form a habit of eating; you will expect to eat at these times and your
+body will begin to prepare for food</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Liquid calories are often easier to take when you are unwell; you may find
+it easier to take high energy drinks/nutritional supplements</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Liquid calories are often easier to take when you are unwell; you may find
+it easier to take high energy drinks/nutritional supplements</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Abandon main meals if you find them too filling – snacks can be just as
+high in energy, less filling and can be eaten any time</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Alcohol can act as an appetite stimulant – sometimes having a small
+drink before meals can stimulate your taste buds</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">If you feel unwell in the mornings don’t force yourself to eat, but do make
+sure you then eat throughout the day and during the evening</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Limit mealtimes to about 30 minutes and space mealtimes three to four
+hours apart. This will give you the chance to get hungry and look forward
+to the next time</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Make the most of any times that you might feel hungry</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">A trip to the supermarket may spark your interest in new types of foods</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Looking at magazines with pictures of food or watching food
+programmes on TV may help stimulate your appetite</span>
+        <span class="subpoint"><img src="assets/img/subpoint.png">Light exercise or walking before meals in fresh air, if possible, can
+increase the appetite</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+<li text-wrap (click)="toggleQuestion(16)" [ngClass]="{active: isQuestionShown(16)}">
+     <button ion-button text-wrap class="questionButton"  round outline color="primary" >Nutritional supplements</button>
+          <span *ngIf="isQuestionShown(16)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Nutritionally complete supplements
+</span>
+                         <span class="subpoint"><img src="assets/img/subpoint.png">e.g. Ensure Plus, Fortisip, Fresubin,
+Entera, Resource.</span>
+<span class="subpoint"><img src="assets/img/subpoint.png">These contain a balance of all nutrients including energy,
+protein, vitamins and minerals</span>
+<span class="subpoint"><img src="assets/img/subpoint.png">They are available in a variety of flavours
+(including savoury) and can be taken as a sip feed or added to recipes</span>
+                         </li>
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Energy and protein rich supplements
+</span>
+                         <span class="subpoint"><img src="assets/img/subpoint.png">e.g. Scandishake, Calshake,
+Enshake, Enlive, Fortijuice.</span>
+                         </li>
+					<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Glucose polymers
+</span>
+                         <span class="subpoint"><img src="assets/img/subpoint.png">e.g. Maxijul, Polycose, Polycal.</span>
+						 <span class="subpoint"><img src="assets/img/subpoint.png">e.g. These are available in
+powder and liquid form. They can be added to drinks and soft foods to
+increase the energy content without increasing bulk.</span>
+                         </li>
+               </ul>   
+          </span>
+    </li>
+        <li text-wrap (click)="toggleQuestion(17)" [ngClass]="{active: isQuestionShown(17)}">
+     <button ion-button text-wrap class="questionButton"  round outline color="primary" >Tube feeding</button>
+          <span *ngIf="isQuestionShown(17)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Although you may feel you are eating well and
+your enzyme dose is correct, you may still fail to gain weight because your
+energy requirements are so high
+</span>
+                         </li>
+						 <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Tube feeding can supplement daytime food intake, make gaining weight
+easier, and relieve the pressure of constantly having to eat
+</span>
+                         </li>
+												 <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Many people with cystic fibrosis have commented that tube feeding helps
+relieve the pressure of having to keep eating to gain weight
+</span>
+                         </li>
+               </ul>   
+          </span>
+    </li>
+         <li text-wrap (click)="toggleQuestion(18)" [ngClass]="{active: isQuestionShown(18)}">
+     <button ion-button text-wrap class="questionButton"  round outline color="primary" >LEARN MORE</button>
+          <span *ngIf="isQuestionShown(18)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">To learn more visit the <a href="http://cysticfibrosis.org.uk">CF Trust UK</a> website
+</span>
+                         </li>
+               </ul>   
+          </span>
+    </li>
+    </ul>
+</ion-content>

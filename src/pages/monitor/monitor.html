@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Let's Keep Track of These</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="appContent">
+    <ion-grid>
+    <ion-row>
+        <ion-col col-6>
+            
+       <section  class="meals"  (click)="goToMealsHome()">
+           <button ion-button   text-wrap full>MEAL MONITOR</button>
+           <span class="icons">
+               <img src="assets/img/meal1.png"/>
+                <img src="assets/img/meal2.png"/>
+           </span>
+       </section>
+        </ion-col>
+        <ion-col>
+        <section  class="blsugar"  (click)="goToBloodsugarHome()">
+           <button ion-button   text-wrap full>BLOOD SUGAR MONITOR</button>
+           <span class="icons">
+               <img src="assets/img/bloodsugar1.png"/>
+                <img src="assets/img/bloodsugar2.png"/>
+           </span>
+       </section>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-6>
+        <section  class="bmi" (click)="gotoMedical()">
+           <button ion-button   text-wrap full>BMI MONITOR</button>
+           <span class="icons">
+               <img src="assets/img/bmi1.png"/>
+                <img src="assets/img/bmi2.png"/>
+           </span>
+       </section>
+        </ion-col>
+        <ion-col>
+        <section  class="enzyme"  (click)="goToEnzymeHome()">
+           <button ion-button   text-wrap full>ENZYME MONITOR</button>
+           <span class="icons">
+               <img src="assets/img/enzyme1.png"/>
+                <img src="assets/img/enzyme2.png"/>
+           </span>
+       </section>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-6>
+        <section  class="vitamins" (click)="goToVitaminsHome()">
+           <button ion-button   text-wrap full>VITAMINS MONITOR</button>
+           <span class="icons">
+               <img src="assets/img/vitamins1.png"/>
+                <img src="assets/img/vitamin2.png"/>
+           </span>
+       </section>
+        </ion-col>
+        <ion-col>
+        <section  class="stats" (click)="goToStatssHome()">
+           <button ion-button   text-wrap full >STATISTICS</button>
+           <span class="icons">
+               <img src="assets/img/stat1.png"/>
+                <img src="assets/img/stat2.png"/>
+           </span>
+       </section>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-12>
+        <section  class="mealsSurprise" (click)="gotoMealSurprise()">
+           <button ion-button   text-wrap full>Suprise Meals</button>
+           <span class="icons">
+               <img src="assets/img/pizza.png"/>
+                <img src="assets/img/taco.png"/>
+                <img src="assets/img/ingredients.png"/>
+           </span>
+       </section>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+</ion-content>
+  

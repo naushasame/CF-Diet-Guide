@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Meals History</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="appContent">
+    <section >
+    <span class="profileHead">
+        <p>swipe left for actions</p>
+    </span>
+    <span class="mealProfile">
+        <ion-list>
+             <ion-item color="secondary">
+                <ion-label>Meal</ion-label>
+                <ion-label>Date</ion-label>
+                <ion-label>Content</ion-label>
+            </ion-item>
+            
+        <ion-item-sliding *ngFor="let meal of mealsrecords; let i = index" class="gray">
+            <ion-item text-wrap class="detailedItems">
+                <ion-label>{{meal.mealTypeVal}}</ion-label>
+                <ion-label>{{meal.mealDateVal}}</ion-label>
+                <ion-label>{{meal.mealDetailsVal}}</ion-label>
+            </ion-item>
+            <ion-item-options>
+                <button ion-button outline (click)="delete(i)" >
+                    <ion-icon name="trash" color="danger" outline></ion-icon>
+                </button>
+            </ion-item-options>
+        </ion-item-sliding>
+    </ion-list>
+    </span>
+       
+     </section>
+</ion-content>
+     <ion-footer class="floating">
+    <button ion-button round (click)="goToAdd()" class="AddButton">+</button>
+  </ion-footer>
+  

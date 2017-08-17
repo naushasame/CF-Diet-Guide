@@ -1,0 +1,50 @@
+ <ion-card class="appContent">
+      <ion-card-header>
+        <h2>Add Vitamin</h2>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+			  <ion-label>Measured Date:</ion-label>
+			  <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="vitDateVal" name="VitaminDate" class="VitaminItemBox"></ion-datetime>
+        </ion-item>
+            <ion-item>
+			  <ion-label>Vitamin:</ion-label>
+			  <ion-select [(ngModel)]="vitNameVal">
+                <ion-option value="A">A</ion-option>
+                <ion-option value="D">D</ion-option>
+                <ion-option value="E">E</ion-option>
+                <ion-option value="K">K</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+			  <ion-label>Dose:</ion-label>
+              <ion-input [(ngModel)]="vitDoseVal"  (click)="clearResult()" placeholder="add dose here" type="number"></ion-input>
+                <ion-select [(ngModel)]="vitDoseUnitVal">
+                    <ion-option value="iu">iu</ion-option>
+                    <ion-option value="mg">mg</ion-option>
+                    <ion-option value="ml">ml</ion-option>
+                    <ion-option value="capsule">capsule</ion-option>
+                 </ion-select>
+        </ion-item>
+        <ion-item>
+			  <ion-label>Meal Time:</ion-label>
+			  <ion-select [(ngModel)]="vitMealTimeVal">
+                <ion-option value="Before Break Fast">Before Break Fast</ion-option>
+                <ion-option value="After Break Fast">After Break Fast</ion-option>
+                <ion-option value="Before Lunch">Before Lunch</ion-option>
+                <ion-option value="After Lunch">After Lunch</ion-option>
+                <ion-option value="Before Snack">Before Snack</ion-option>
+                <ion-option value="After Snack">After Snack</ion-option>
+                <ion-option value="Before Dinner">Before Dinner</ion-option>
+                <ion-option value="After Dinner">After Dinner</ion-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+              <ion-label>{{addResult}}</ion-label>
+        </ion-item>
+        <ion-row>
+      <ion-col><button ion-button (click)="saveVitamin()" class="buttons">Add Record</button></ion-col>
+      <ion-col><button ion-button  (click)="dismiss()" class="buttons">Cancel</button></ion-col>
+      </ion-row>
+  </ion-card-content>
+</ion-card>

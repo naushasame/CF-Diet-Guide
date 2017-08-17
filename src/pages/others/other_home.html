@@ -1,0 +1,345 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>More Tips on CF</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="appContent">
+    <ul class="questions">
+        <li text-wrap (click)="toggleQuestion(0)" [ngClass]="{active: isQuestionShown(0)}">
+            <button ion-button text-wrap class="questionButton" round outline color="primary">Shopping</button>
+            <span *ngIf="isQuestionShown(0)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Shopping at a supermarket is often cheaper than local shops. If you are
+on a tight budget look out for supermarket value labels
+</span>
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Bulk-buy a selection of snacks such as nuts, dried fruit, crisps, chocolate
+bars, peanuts, seeds etc at the supermarket to take to work or college
+and keep in your desk or locker. This will be less expensive than buying
+them on site and you will always have a snack to hand
+</span>
+        </li>
+        <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">If you find shopping a physical challenge, look into home delivery
+services; many stores offer internet or phone shopping services
+</span>
+        </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(1)" [ngClass]="{active: isQuestionShown(1)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">Preparing meals</button>
+        <span *ngIf="isQuestionShown(1)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">If you are planning to live away from home for the first time, try to prepare
+yourself. Get in some cooking practice before you leave. Collect some
+easy recipes of meals you like
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Convenience food and ready meals can be useful if you do not have very
+much time or don’t enjoy cooking. They are nutritious and require little
+time or effort to prepare
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Think about having your main meal at work or college, especially if there
+is a subsidised canteen
+</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(2)" [ngClass]="{active: isQuestionShown(2)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">General</button>
+        <span *ngIf="isQuestionShown(2)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Try not to skip breakfast – at least have some cereal or a Danish pastry
+with juice or milk, which is quick and nutritious
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Be prepared; if you cannot buy food at work, either take a packed lunch
+or stop at a bakery or sandwich shop on your way to work
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">If you have to make long journeys or spend a long time in the car keep a
+supply of drinks and snacks with you
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">If you find it hard to maintain your intake, you may find prescribable high
+energy drinks useful to take to work. Speak to your dietitian or doctor if
+you have not used these before
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Keep your cupboards, fridge and freezer well stocked with food in case
+you cannot get to the supermarket
+</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(3)" [ngClass]="{active: isQuestionShown(3)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">Cupboard Stock</button>
+        <span *ngIf="isQuestionShown(3)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Tinned meat – ham, corned beef, stew, curry
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Tinned fish – tuna, sardines, mackerel, pilchards
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Tinned vegetables – baked beans, tomatoes, sweetcorn
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Tinned soups – creamed or condensed varieties
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Jars of pasta, curry or stir-fry sauces
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Olive oil, rapeseed oil, vegetable oil, gravy and instant sauce mixes
+</span>
+    </li>
+
+
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Salt, pepper, herbs and spices</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Sugar</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Pasta, rice, noodles</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Breakfast cereals, biscuits, crackers</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Chocolate bars, sweets</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Savoury snacks – crisps, nuts, seeds</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Dried fruit</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Dips</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Jam, honey, peanut butter, chocolate spread</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Tinned sponge and milk puddings, fruit in syrup</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Ready to serve custard, evaporated milk</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Instant whip, milkshake powder or syrup</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Long-life milk and juice</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(4)" [ngClass]="{active: isQuestionShown(4)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">Fridge Stock</button>
+        <span *ngIf="isQuestionShown(4)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Margarine/butter
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Cheese, cheese spread
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Milk, cream, yogurt
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Tinned soups – creamed or condensed varieties
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Mayonnaise, dressings, dips and bottled sauces, including ketchup
+</span>
+    </li>
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(5)" [ngClass]="{active: isQuestionShown(5)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">Freezer Stock</button>
+        <span *ngIf="isQuestionShown(5)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Ready meals – lasagne, curry, nut roasts
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Breaded fish or chicken portions, sausages, beef burgers, vegetable or
+bean burgers
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Frozen fresh meat
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Pizza, garlic bread, naan bread, pitta bread
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Oven chips, croquette potatoes, potato waffles, hash browns, potato
+rosti
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Frozen vegetables including peas
+rosti
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Dairy ice cream
+</span>
+    </li>
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(6)" [ngClass]="{active: isQuestionShown(6)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">Body Image and CF</button>
+        <span *ngIf="isQuestionShown(6)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Body image is how an individual perceives
+(i.e., thoughts and feelings) his or her own body and
+how the individual perceives that others view him or her
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Young people are at increased
+risk for body image disturbances that commonly involve
+body weight and shape dissatisfaction
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Include physical and appearance
+attributes, such as facial characteristics, skin appearance,
+muscularity, fitness, and strength
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Those with CF tend to have difficulty maintaining
+normal body weights
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Frequent family meals also may help to defend against
+body dissatisfaction and disordered eating because it
+allows time for parents to “check-in” with their child and
+provide emotional support when needed
+</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(7)" [ngClass]="{active: isQuestionShown(7)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">Family Mealtimes</button>
+        <span *ngIf="isQuestionShown(7)" class="answer">
+               <ul class="details">
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Raising a child with a chronic health condition can
+present many challenges for families
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Mealtimes can be particularly challenging for families
+with a child with cystic fibrosis (CF) because a strict
+nutrition regimen is required
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">In addition to parental functioning, the overall level
+of functioning within families has important implications
+for CF treatment behaviors. Warm, supportive,
+and responsive interactions between family members, as
+well as lower levels of family conflict, have been associated
+with higher rates of treatment adherence
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">When families  work together
+as a team, it is most useful in ensuring that children
+are adhering to their antibiotic treatments
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Those with CF tend to have difficulty maintaining
+normal body weights
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Frequent family meals also may help to defend against
+body dissatisfaction and disordered eating because it
+allows time for parents to “check-in” with their child and
+provide emotional support when needed
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Subtle changes in
+mealtime conversations that focus on the routine events
+of the day may reduce stress not only for the child but
+also for caregivers
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Establishing good dietary
+habits in a supportive family environment may bode
+well for children as they reach the vulnerable period of adolescence and young adulthood, when adherence and dietary habits often are weakened
+</span>
+    </li>
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(8)" [ngClass]="{active: isQuestionShown(8)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">Sleep Dysfunction</button>
+        <span *ngIf="isQuestionShown(8)" class="answer">
+               <ul class="details">
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Both sleep loss and nocturnal hypoxemia are correlated
+with impaired daytime cognitive function in CF
+patients
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Administration of exogenous melatonin has been
+shown widely to promote sleep in healthy individuals
+</span>
+    </li>
+
+
+    </ul>
+    </span>
+    </li>
+    <li text-wrap (click)="toggleQuestion(9)" [ngClass]="{active: isQuestionShown(9)}">
+        <button ion-button text-wrap class="questionButton" round outline color="primary">Caffeine, Alcohol,
+and Tobacco</button>
+        <span *ngIf="isQuestionShown(9)" class="answer">
+               <ul class="details">
+		<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">The diuretic properties of caffeine, which causes frequent
+urination, can endanger a patient who is already at risk
+of dehydration based on the underlying pathogenesis
+of their inherited disease
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Since the adverse effects of excessive alcohol consumption include direct toxicity
+to organs, especially the liver, patients with CF are
+already at an increased risk because of their condition
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">Using alcohol as either a
+meal replacement to prevent the pain associated with
+chronic pancreatitis or for its other uses poses a significant
+threat to the long-term survival of patients
+with CF
+</span>
+    </li>
+    <li><span class="mainpoint"><img src="assets/img/mainitemlist.png">In individuals with CF, exposure to smoke irritates
+the linings of mucosal membranes, which increases
+coughing and sputum production and increases the risk
+of bacterial infections and worsening symptoms
+</span>
+</li>
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">The consumption of caffeine may not be as severe
+as the other two substances, but continued use, or use
+associated with the general population, can pose threats
+to patients with CF and should be considered when
+creating various forms of therapy
+</span>
+</li>
+
+</ul>
+</span>
+</li>
+<li text-wrap (click)="toggleQuestion(10)" [ngClass]="{active: isQuestionShown(10)}">
+    <button ion-button text-wrap class="questionButton" round outline color="primary">LEARN MORE</button>
+    <span *ngIf="isQuestionShown(10)" class="answer">
+               <ul class="details">
+			   
+<li><span class="mainpoint"><img src="assets/img/mainitemlist.png">To learn more visit the <a href="http://cysticfibrosis.org.uk">CF Trust UK</a> website
+</span>
+  </li>
+  </ul>
+  </span>
+  </li>
+</ul>
+</ion-content>

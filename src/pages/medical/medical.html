@@ -1,0 +1,27 @@
+<ion-card class="appContent">
+      <ion-card-header>
+        <h2>Add BMI Record</h2>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+			  <ion-label>Height(cm):</ion-label>
+			  <ion-input [(ngModel)]="height" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+			  <ion-label>Weight(kg):</ion-label>
+			  <ion-input [(ngModel)]="weight" type="number"></ion-input>
+        </ion-item>
+        <ion-item>
+			  <ion-label>Recorded Date:</ion-label>
+			  <ion-datetime displayFormat="MMM DD, YYYY" [(ngModel)]="date" name="date" class="medicalItemBox"></ion-datetime>
+        </ion-item>
+        <ion-item>
+              <ion-label>{{addResult}}</ion-label>
+        </ion-item>
+		 
+        <ion-row>
+      <ion-col><button ion-button  (click)="saveBMIProfile()" class="buttons">Add BMI Record</button></ion-col>
+      <ion-col><button ion-button  (click)="dismiss()" class="buttons">Cancel</button> </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-card>
